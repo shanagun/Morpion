@@ -16,12 +16,11 @@ class Game
   def turn
     i=0
     while @status == 'en cours' && i<9
-      @current_player = @array_players[i%2] # joueur alternativement index 0 ou 1
+      @current_player = @array_players[i%2] # jouer alternativement index 0 ou 1
       @board.play_turn(@board, @current_player)
       
-      # affiche tableau en-cours
       Show.new.show_board(@board)
-      # check winner
+      # vérifier gagnant
       if @board.victory?(@board)
         @status = 'winner'
         break
