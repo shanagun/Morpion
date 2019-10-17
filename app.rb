@@ -1,11 +1,11 @@
 require 'bundler'
 Bundler.require
 
-require_relative 'lib/Player'
-require_relative 'lib/Board'
-require_relative 'lib/BoardCase'
-require_relative 'lib/Application'
-require_relative 'lib/Game'
-require_relative 'lib/Show'
+require_relative 'lib/app/Player'
+require_relative 'lib/app/Board'
+require_relative 'lib/app/BoardCase'
+require_relative 'lib/app/Application'
+require_relative 'lib/app/Game'
+require_relative 'lib/views/Show'
 
 Application.new
