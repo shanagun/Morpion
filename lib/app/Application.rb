@@ -1,5 +1,5 @@
 class Application
-  attr_accessor :player1, :player2, :game
+  attr_accessor :game
 
   def initialize
     @game = Game.new

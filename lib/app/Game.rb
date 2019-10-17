@@ -1,5 +1,5 @@
 class Game 
-  attr_accessor :array_players , :board, :status, :current_player
+  attr_accessor :array_players, :board, :status, :current_player
 
   def initialize
     @player1 = Player.new(@name, "X")
@@ -20,6 +20,7 @@ class Game
       @board.play_turn(@board, @current_player)
       
       Show.new.show_board(@board)
+      
       # vérifier gagnant
       if @board.victory?(@board)
         @status = 'winner'

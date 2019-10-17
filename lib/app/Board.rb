@@ -16,9 +16,6 @@ class Board
 
 	def play_turn(board, current_player)
 
-    input_ko = true
-    
-    while input_ko
       puts "#{current_player.name}, ton symbole est '#{current_player.player_symbol}', quelle case veux-tu jouer ? "
       case_to_play = gets.chomp.upcase
       system "clear"
@@ -27,70 +24,61 @@ class Board
       when "A1"
           if board.array_boardcase[0].board_symbol == " "
               board.array_boardcase[0].board_symbol  = current_player.player_symbol
-              input_ko = false
           else
               puts "La case est indisponible, réessaye dans une autre case !"
           end
       when "A2"
           if board.array_boardcase[1].board_symbol == " "
               board.array_boardcase[1].board_symbol  = current_player.player_symbol
-              input_ko = false
           else
               puts "La case est indisponible, réessaye dans une autre case !"
           end
       when "A3"
           if board.array_boardcase[2].board_symbol == " "
               board.array_boardcase[2].board_symbol  = current_player.player_symbol
-              input_ko = false
           else
               puts "La case est indisponible, réessaye dans une autre case !"
           end
       when "B1"
           if board.array_boardcase[3].board_symbol == " "
               board.array_boardcase[3].board_symbol  = current_player.player_symbol
-              input_ko = false
           else
               puts "La case est indisponible, réessaye dans une autre case !"
           end
       when "B2"
           if board.array_boardcase[4].board_symbol == " "
               board.array_boardcase[4].board_symbol  = current_player.player_symbol
-              input_ko = false
           else
               puts "La case est indisponible, réessaye dans une autre case !"
           end
       when "B3"
           if board.array_boardcase[5].board_symbol == " "
               board.array_boardcase[5].board_symbol  = current_player.player_symbol
-              input_ko = false
           else
               puts "La case est indisponible, réessaye dans une autre case !"
           end
       when "C1"
           if board.array_boardcase[6].board_symbol == " "
               board.array_boardcase[6].board_symbol  = current_player.player_symbol
-              input_ko = false
           else
               puts "La case est indisponible, réessaye dans une autre case !"
           end
       when "C2"
           if board.array_boardcase[7].board_symbol == " "
               board.array_boardcase[7].board_symbol  = current_player.player_symbol
-              input_ko = false
           else
               puts "La case est indisponible, réessaye dans une autre case !"
           end
       when "C3"
-          if board.array_boardcase[8].board_symbol ==" "
+          if board.array_boardcase[8].board_symbol == " "
               board.array_boardcase[8].board_symbol  = current_player.player_symbol
-              input_ko = false
           else
               puts "La case est indisponible, réessaye dans une autre case !"
           end
       else 
           puts "erreur de case"
       end
-    end
+    
   end
   
   def victory?(board)
