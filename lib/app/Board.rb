@@ -98,58 +98,58 @@ class Board
 		# test combinaison horizontale
 		# si cases sont identiques
 		if board.array_boardcase[0].board_symbol == 'X' && board.array_boardcase[1].board_symbol == 'X' && board.array_boardcase[2].board_symbol == 'X'
-			return false
+			return true
 		end
 		if board.array_boardcase[0].board_symbol == 'O' && board.array_boardcase[1].board_symbol == 'O' && board.array_boardcase[2].board_symbol == 'O'
-			return false
+			return true
 		end
 		if board.array_boardcase[3].board_symbol == 'X' && board.array_boardcase[4].board_symbol == 'X' && board.array_boardcase[5].board_symbol == 'X'
-			return false
+			return true
 		end
 		if board.array_boardcase[3].board_symbol == 'O' && board.array_boardcase[4].board_symbol == 'O' && board.array_boardcase[5].board_symbol == 'O'
-			return false
+			return true
 		end
 		if board.array_boardcase[6].board_symbol == 'X' && board.array_boardcase[7].board_symbol == 'X' && board.array_boardcase[8].board_symbol == 'X'
-			return false
+			return true
 		end
 		if board.array_boardcase[6].board_symbol == 'O' && board.array_boardcase[7].board_symbol == 'O' && board.array_boardcase[8].board_symbol == 'O'
-			return false
+			return true
 		end
 
 		# test combinaison verticale
 		# si cases sont identiques
 		if board.array_boardcase[0].board_symbol == 'X' && board.array_boardcase[3].board_symbol == 'X' && board.array_boardcase[6].board_symbol == 'X'
-			return false
+			return true
 		end
 		if board.array_boardcase[0].board_symbol == 'O' && board.array_boardcase[3].board_symbol == 'O' && board.array_boardcase[6].board_symbol == 'O'
-			return false
+			return true
 		end
 		if board.array_boardcase[1].board_symbol == 'X' && board.array_boardcase[4].board_symbol == 'X' && board.array_boardcase[7].board_symbol == 'X'
-			return false
+			return true
 		end
 		if board.array_boardcase[1].board_symbol == 'O' && board.array_boardcase[4].board_symbol == 'O' && board.array_boardcase[7].board_symbol == 'O'
-			return false
+			return true
 		end
 		if board.array_boardcase[2].board_symbol == 'X' && board.array_boardcase[5].board_symbol == 'X' && board.array_boardcase[8].board_symbol == 'X'
-			return false
+			return true
 		end
 		if board.array_boardcase[2].board_symbol == 'O' && board.array_boardcase[5].board_symbol == 'O' && board.array_boardcase[8].board_symbol == 'O'
-			return false
+			return true
 		end
 
 		# test combinaison diagonale
 		# si cases sont identiques
 		if board.array_boardcase[0].board_symbol == 'X' && board.array_boardcase[4].board_symbol == 'X' && board.array_boardcase[8].board_symbol == 'X'
-			return false
+			return true
 		end
 		if board.array_boardcase[0].board_symbol == 'O' && board.array_boardcase[4].board_symbol == 'O' && board.array_boardcase[8].board_symbol == 'O'
-			return false
+			return true
 		end
 		if board.array_boardcase[2].board_symbol == 'X' && board.array_boardcase[4].board_symbol == 'X' && board.array_boardcase[6].board_symbol == 'X'
-			return false
+			return true
 		end
 		if board.array_boardcase[2].board_symbol == 'O' && board.array_boardcase[4].board_symbol == 'O' && board.array_boardcase[6].board_symbol == 'O'
-			return false
+			return true
 		end
 
 	end
